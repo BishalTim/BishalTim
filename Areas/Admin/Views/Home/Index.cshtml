@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+   
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="~/css/admin.css" />
+    <title>eTickets Admin Dashboard</title>
+    
+</head>
+<body>
+    <header class="header">
+        <h1>eTickets Admin Dashboard</h1>
+    </header>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="@Url.Action("", "Orders", new { area = "" })">Orders</a></li>
+            <li><a href="@Url.Action("Users", "Account", new { area = "" })">Users</a></li>
+            <li><a href="@Url.Action("Index", "Movies", new { area = "" })">Movies</a></li>
+          
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="content">
+            <!-- Your content goes here -->
+        </div>
+    </main>
+</body>
+</html>

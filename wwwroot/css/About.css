@@ -1,0 +1,35 @@
+﻿/* Center the content vertically and horizontally */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Set a background color */
+}
+
+/* Style for the under construction message */
+.under-construction {
+    text-align: center;
+    font-size: 36px;
+    color: #333; /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
+}
+
+/* Animation for the construction icon */
+.construction-icon {
+    font-size: 48px;
+    animation: spin 2s linear infinite; /* Apply a spinning animation */
+}
+
+/* Keyframes for the spinning animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

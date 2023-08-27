@@ -1,0 +1,316 @@
+﻿/* Set the background color to black */
+body {
+    background-color: #121212;
+}
+
+/* Style the card with a black background and white text */
+.card {
+    background-color: #121212;
+    color: white;
+}
+/* Add a fixed height to the card container */
+.card-container {
+    height: 400px; /* You can adjust the height as needed */
+}
+/* Style the card header with a different background color */
+.card-header {
+    background-color: #121212; /* You can adjust the color as needed */
+}
+
+/* Style the card footer if needed */
+.card-footer {
+    background-color: #343a40; /* You can adjust the color as needed */
+}
+
+/* Style the card text */
+.card-text {
+    color: white;
+}
+
+/* Style the links within the card text */
+.card-text a {
+    color: #007bff; /* You can adjust the link color as needed */
+}
+
+/* Style the buttons within the card text */
+.card-text .btn {
+    color: white;
+    background-color: #007bff; /* You can adjust the button color as needed */
+}
+
+/* Style the badges within the card text */
+.card-text .badge {
+    color: white;
+}
+.card {
+    margin: 0 auto;
+    max-width: 75%; /* Adjust the size as needed */
+}
+/* Add a fixed height to the card container */
+.card-container {
+    height: 400px; /* You can adjust the height as needed */
+    overflow: hidden; /* Hide overflowing content if necessary */
+    position: relative;
+}
+
+/* Style the movie card inside the container */
+.movie-card {
+    /* Your movie card styles go here */
+}
+
+/* Style the advertise container */
+.advertise-container {
+    height: 400px; /* Set the same height as the card container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the advertise image inside the container */
+.advertise-image {
+    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+}
+
+/* Style the header container */
+#main-header {
+    background-color: #343a40; /* Header background color */
+    color: white;
+    padding: 10px 0;
+}
+
+    /* Style the navigation container */
+    #main-header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+/* Style the logo */
+.main-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the main navigation links */
+.main-navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+    .main-navigation li {
+        margin-right: 20px;
+    }
+
+        .main-navigation li:last-child {
+            margin-right: 0;
+        }
+
+    .main-navigation a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s ease;
+    }
+
+        .main-navigation a:hover {
+            color: #007bff;
+        }
+
+/* Style the user navigation links */
+.user-nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+    .user-nav a:hover {
+        color: #007bff;
+    }
+
+/* Style the navigation toggler button */
+.nav-toggler {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+    .nav-toggler span {
+        background-color: white;
+        display: block;
+        height: 2px;
+        width: 25px;
+        margin: 5px 0;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Style the navigation toggler button animation */
+    .nav-toggler.open span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .nav-toggler.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggler.open span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    /* Show the navigation toggler button */
+    .nav-toggler {
+        display: block;
+    }
+
+    /* Hide the main navigation on small screens */
+    .main-navigation {
+        display: none;
+        flex-direction: column;
+        background-color: #343a40;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+        .main-navigation.show {
+            display: flex;
+        }
+
+        /* Style the links in the mobile navigation */
+        .main-navigation a {
+            margin: 5px 0;
+        }
+}
+/* Background color */
+.bg-black {
+    background-color: black;
+}
+
+/* Text color */
+.text-gray {
+    color: gray;
+}
+.nav-container {
+    background-color: black;
+    /* Add any additional styling you need */
+}
+
+/* Add margin to create space between navigation bar and card container */
+
+/* Style the smaller navbar */
+.navbar-smaller {
+    padding-top: 10px; /* Adjust the top padding to make it smaller */
+    padding-bottom: 10px; /* Adjust the bottom padding to make it smaller */
+}
+
+/* Custom CSS for the smaller navigation bar */
+.navbar {
+    padding: 1px 0; /* Reduce top and bottom padding */
+}
+
+.navbar-brand {
+    font-size: 14px; /* Reduce font size for the brand/logo */
+}
+
+.navbar-nav .nav-link {
+    font-size: 14px; /* Reduce font size for the navigation links */
+    padding: 8px 15px; /* Adjust padding for the links */
+}
+/* Example of media query for smaller screens */
+@media (max-width: 768px) {
+    /* Adjust font size here */
+    .card-title {
+        font-size: 18px;
+    }
+}
+.nav-tabs .nav-link.with-border {
+    border-bottom: 10px solid green; /* Adjust the thickness as needed */
+    color: white; /* Change the text color as needed */
+    font-size:2em;
+}
+
+    .nav-tabs .nav-link.with-border.active {
+       
+        background-color: white; /* Change the active tab's background color as needed */
+        color: black; /* Change the active tab's text color as needed */
+    }
+
+
+
+/* Prevent text selection for card text */
+.card-text {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Prevent text selection for card title */
+.card-title {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
+
+/* Loader styles */
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Set the initial background to black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+/* Animation for the loader */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* Add this CSS to reduce the gap */
+.tab-content {
+    margin-top: 5px; /* Adjust the top margin as needed */
+}
+
+.tab-pane {
+    padding: 10px; /* Adjust the padding as needed */
+}
+/* Adjust the margin between movie cards */
+.card-container {
+    margin-bottom: 0px; /* Adjust the bottom margin as needed */
+}
+
+
+/* CSS to display movie images horizontally */
+
+

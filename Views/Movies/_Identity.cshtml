@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@inject UserManager<ApplicationUser> UserManager; 
+
+@if (!User.Identity.IsAuthenticated)
+{
+    <a class="btn btn-outline-success btn-sm my-2 my-sm-0" asp-controller="Account" asp-action="Login">
+        <i class="bi bi-box-arrow-in-right"></i> Log in
+    </a>
+    <span style="padding: 2px;"></span>
+
+    <a class="btn btn-outline-primary btn-sm my-2 my-sm-0" asp-controller="Account" asp-action="Register">
+        <i class="bi bi-person-plus"></i> Register
+    </a>
+}
+else
+{
+    <!-- User profile section -->
+    <div class="dropdown">
+        <button class="btn btn-outline-success btn-sm" type="button" id="profile-btn">
+            <i class="bi bi-person-badge"></i> Hello @UserManager.GetUserName(User)
+        </button>
+
+        @if (User.IsInRole("Admin"))
+        {
+            <!-- Admin-specific content -->
+        }
+    </div>
+    <span style="padding: 1px;"></span>
+    <form asp-controller="Account" asp-action="Logout">
+        <button class="btn btn-outline-danger btn-sm my-1 my-sm-0">
+            <i class="bi bi-box-arrow-in-right"></i> Log out
+        </button>
+    </form>
+}
+
